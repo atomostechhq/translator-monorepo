@@ -1,0 +1,31 @@
+# Typical OS files
+.DS_Store
+Thumbs.db
+
+# Python cache & compiled
+__pycache__/
+*.pyc
+
+# Go build artifacts
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# Build artifacts
+build/
+dist/
+
+# Env / credentials
+.env
+
+# Private scripts or secrets (like build-images.sh)
+build-images.sh

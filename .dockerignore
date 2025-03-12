@@ -1,0 +1,14 @@
+# Ignore Git folder and files
+.git
+.gitignore
+
+# Node modules
+node_modules
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Docker ignore build artifacts
+build/
+dist/

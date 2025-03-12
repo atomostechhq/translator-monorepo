@@ -1,0 +1,16 @@
+services:
+  translator-service:
+    build: ./translator
+    container_name: translator-service
+    ports:
+      - "8000:8000"
+
+  go-api:
+    build: ./api
+    container_name: go-api
+    ports:
+      - "8080:8080"
+    environment:
+      TRANSLATOR_URL: "http://translator-service:8000"
+    depends_on:
+      - translator-service
