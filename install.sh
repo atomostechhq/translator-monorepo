@@ -17,7 +17,7 @@ echo "============================"
 echo " Checking Docker Compose"
 echo "============================"
 
-if ! command -v docker-compose &> /dev/null
+if ! command -v docker compose &> /dev/null
 then
     echo "Docker Compose not found! Installing..."
     sudo curl -L \"https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)\" -o /usr/local/bin/docker-compose
@@ -29,5 +29,5 @@ fi
 echo "============================"
 echo " Pulling images & starting containers"
 echo "============================"
-docker-compose pull
-docker-compose up -d
+docker compose pull
+docker compose up -d
